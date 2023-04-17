@@ -5,12 +5,28 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { ArticlesComponent } from './pages/articles/articles.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { LastArticleComponent } from './components/last-article/last-article.component';
+import { OtherArticlesComponent } from './components/other-articles/other-articles.component';
+import { TravelAndSummaryComponent } from './components/travel-and-summary/travel-and-summary.component';
+import { OurAdviceComponent } from './components/our-advice/our-advice.component';
+import { ToTravelALittleMoreComponent } from './components/to-travel-alittle-more/to-travel-alittle-more.component';
+import { ReturnBtnComponent } from './components/return-btn/return-btn.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
-    ArticlesComponent
+    ArticlesComponent,
+    HeaderComponent,
+    FooterComponent,
+    LastArticleComponent,
+    OtherArticlesComponent,
+    TravelAndSummaryComponent,
+    OurAdviceComponent,
+    ToTravelALittleMoreComponent,
+    ReturnBtnComponent
   ],
   imports: [
     BrowserModule,
