@@ -1,0 +1,29 @@
+article{
+    width: auto;
+    height: 1016px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 157px;
+}
+
+
+.lastTravelPicture {
+    width: 1029px;
+    height: 686px;
+    background-image: url("/assets/Iceland/Iceland4.jpeg");
+    /* display: flex; */
+}
+
+.terracottaBand{
+    height: 118px;
+    background-color: var(--terracotta);
+    opacity: 70%;
+    /* align-items: baseline;?????? */
+    
+}
+
+h2, h4{
+    color: var(--white);
+    /* opacity: 100%; ??????*/
+}
