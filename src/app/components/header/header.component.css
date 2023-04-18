@@ -1,0 +1,45 @@
+/* HEADER BANDE */
+
+.headerBand {
+    position: fixed; /* fixe la div */
+    top: 0; /* en haut */
+    left: 0; /* à gauche  */
+    width: 157px; /* définissez la largeur de la bande */
+    height: 100vh; /* sur toute la hauteur */
+    background-color: var(--sand); 
+    /* display: flex;  
+    justify-content: center; centre le texte verticalement 
+    align-items: center; centre le texte horizontalement */
+  }
+  
+  .headerText {
+    height: 350px;
+    transform: rotate(-90deg); /* pivote le texte */
+    white-space: nowrap; /* texte sur une seule ligne */
+    display: flex;  
+    justify-content: center; 
+    align-items: center;
+  }               
+  
+  .headerBlankPart{
+    height: 400px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+
+  }
+
+  .headerCityAndTemp{
+    transform: rotate(-90deg); /* pivote le texte */
+    display: flex;  
+    justify-content: center; 
+    align-items: center;
+    padding-bottom: 25px;
+
+  }
+  /* CONTAINER CARNET DE VOYAGE ?*/
+  /* .textContainer{
+    display: flex;
+    justify-content: center;                                                                   
+    height: 374px;
+    border: solid 2px black;                                           
+  } */
