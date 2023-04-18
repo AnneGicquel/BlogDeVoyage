@@ -15,7 +15,7 @@ export interface IarticlesData {
 }
 
 
-export const ARTICLESDATA:IarticlesData[]=[
+export const ARTICLESDATA : IarticlesData[]=[
     
     {
         id:1,
