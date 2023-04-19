@@ -1,4 +1,5 @@
 export interface IarticlesData {
+    
     id:number;
     country: string;
     city: string;
@@ -35,20 +36,19 @@ export const ARTICLESDATA : IarticlesData[]=[
     },
     
     {
-
         id:2,
         country: "Bolivia",
         city: "Uyuni",
         departureDate: "14/02/2022",
         returnDate: "31/02/2022",
-        mainPicture: "assets/Bolivia/bolivia_uyuni_pinkLake.jpg",
+        mainPicture: "assets/Bolivia/Bolivia_Uyuni_pinkLake.jpeg",
         secondaryImages: ["assets/Bolivia/Bolivia_Uyuni _SaltFlat3.jpg","assets/Bolivia/Bolivia_Uyuni _SaltFlat2.jpg","assets/Bolivia/Bolivia_Uyuni_SaltFlat1.jpg"],
         textAboutTravel: "Whether you're travelling to the islands or the mountains of Thailand, you're likely to spend at least one night in its capital city on the way. Bangkok might be noisy and polluted but it's also an exciting city with plenty of things to see and do.",
         goodPoints: ['BOL1', 'BOL2', 'BOL3'],
         badPoints: ["bol1","bol2", "bol3"],
         advices: ["BConseil1","BConseil2","BConseil3",],
         summary:"After you've seen the main sites like the Giant Buddha at the temple of Wat Pho and the spectacular Grand Palace, and shopped at Chatuchak market, check out the snake farm and watch the live snake show. You can even touch a snake yourself if you want to!",
-        isOnHomePage:false 
+        isOnHomePage:true
 
     },
 
