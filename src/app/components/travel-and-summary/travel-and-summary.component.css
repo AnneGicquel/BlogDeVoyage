@@ -1,0 +1,11 @@
+.rectangleTerracotta{
+    width: 1029px;
+    min-height: auto;
+    background-color: var(--terracotta);
+}
+
+.textTravelorSummary{
+    color: var(--white);
+    /* "pre-line" -> les retours à la ligne seront pris en compte grâce à \n dans le mock*/
+    white-space:pre-line;
+}

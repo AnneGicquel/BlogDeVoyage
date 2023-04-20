@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { ARTICLESDATA, IarticlesData } from 'src/app/mocks/articlesData';
 
 @Component({
   selector: 'app-our-advice',
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./our-advice.component.css']
 })
 export class OurAdviceComponent {
+
+  // data: IarticlesData[]= ARTICLESDATA;
+
+  @Input() goodPoints!:string[];
+  @Input() badPoints!:string[];
+  @Input() advices!:string[];
+
+  ourAdvices!:IarticlesData[];
 
 }

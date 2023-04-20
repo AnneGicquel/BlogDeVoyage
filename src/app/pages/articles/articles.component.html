@@ -1,1 +1,12 @@
-<p>articles works!</p>
+
+<app-cover-article [travelArticle]="travelArticle"></app-cover-article>
+
+<app-travel-and-summary [title]="'Le voyage'" [text]="travelArticle.textAboutTravel"></app-travel-and-summary>
+
+<app-our-advice [goodPoints]="travelArticle.goodPoints" 
+                [badPoints]="travelArticle.badPoints" 
+                [advices]="travelArticle.advices"></app-our-advice>
+
+<app-travel-and-summary [title]="'En résumé'" [text]="travelArticle.summary"></app-travel-and-summary>
+
+<app-to-travel-alittle-more [secondaryImages]="travelArticle.secondaryImages"></app-to-travel-alittle-more>
