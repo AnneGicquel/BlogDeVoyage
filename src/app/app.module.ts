@@ -13,6 +13,7 @@ import { TravelAndSummaryComponent } from './components/travel-and-summary/trave
 import { OurAdviceComponent } from './components/our-advice/our-advice.component';
 import { ToTravelALittleMoreComponent } from './components/to-travel-alittle-more/to-travel-alittle-more.component';
 import { ReturnBtnComponent } from './components/return-btn/return-btn.component';
+import { CoverArticleComponent } from './components/cover-article/cover-article.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ReturnBtnComponent } from './components/return-btn/return-btn.component
     TravelAndSummaryComponent,
     OurAdviceComponent,
     ToTravelALittleMoreComponent,
-    ReturnBtnComponent
+    ReturnBtnComponent,
+    CoverArticleComponent
   ],
   imports: [
     BrowserModule,

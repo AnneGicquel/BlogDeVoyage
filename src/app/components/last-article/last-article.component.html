@@ -1,7 +1,7 @@
 <article routerLink="/articles">
     <ng-container *ngFor="let data of data">
         <div *ngIf="data.isOnHomePage" class="lastTravelPicture">
-            <img src="{{data.mainPicture}}" alt="Image du voyage en {{data.country}}">
+            <img [routerLink]="['/articles', data.id]" src="{{data.mainPicture}}" alt="Image du voyage en {{data.country}}" >
             <div class="terracottaBand">
                 <div class="countryPart">
                     <h2>{{data.country}} - {{data.city}}</h2>

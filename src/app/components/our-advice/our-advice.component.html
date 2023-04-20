@@ -1,1 +1,24 @@
-<p>our-advice works!</p>
+<article>
+
+    <h1>Notre avis</h1>
+
+
+    <h3>Les plus</h3>
+    <ul >
+        <li *ngFor="let gPoint of goodPoints">{{gPoint}}</li>
+    </ul>
+
+
+    <h3>Les moins</h3>
+    <ul >
+        <li *ngFor="let bPoint of badPoints">{{bPoint}}</li>
+    </ul>
+
+
+    <h3>Mon conseil</h3>
+    <ul>
+        <li *ngFor="let adv of advices">{{adv}}</li>
+    </ul>  
+
+
+</article>

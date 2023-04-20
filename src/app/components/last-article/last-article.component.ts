@@ -10,6 +10,9 @@ import { ARTICLESDATA, IarticlesData } from 'src/app/mocks/articlesData';
 export class LastArticleComponent {
 
   data: IarticlesData[]= ARTICLESDATA;
+
+  //  pour ne pas faire une boucle pour trouver le .isOnHomePage !!!
+  // data?: IarticlesData = ARTICLESDATA.find(article=>article.isOnHomePage)
   
 
 }

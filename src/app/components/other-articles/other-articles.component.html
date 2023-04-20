@@ -5,7 +5,7 @@
     <h1>Autres voyages</h1>
     <div class="allCountriesPictures">
         <ng-container *ngFor="let data of data" >
-            <a *ngIf="!data.isOnHomePage"><img class="size" src="{{data.mainPicture}}"
+            <a *ngIf="!data.isOnHomePage" [routerLink]="['/articles', data.id]"><img class="size" src="{{data.mainPicture}}"
                     alt="Autre pays: {{data.country}}" ></a>
         </ng-container>
     </div>
