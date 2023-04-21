@@ -1,0 +1,14 @@
+.returnButton {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: var(--terracotta);
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+}
+
+.whiteArrow {
+    padding: 60px;
+}
