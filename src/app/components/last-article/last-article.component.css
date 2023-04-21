@@ -8,6 +8,7 @@ article{
     position: relative;
     width: 1029px;
     height: 686px;
+    object-fit: cover;
 }
 
 .terracottaBand{

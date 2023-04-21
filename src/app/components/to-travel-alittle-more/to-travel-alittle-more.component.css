@@ -1,6 +1,8 @@
 img{
     width: 320px;
     height: 320px;
+    object-fit: cover;
     margin: 15px;
+    
     /* gap ! */
 }

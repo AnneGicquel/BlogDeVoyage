@@ -10,4 +10,5 @@ h4{
 img{
     width: 1029px;
     height: 686px;
+    object-fit: cover;
 }
