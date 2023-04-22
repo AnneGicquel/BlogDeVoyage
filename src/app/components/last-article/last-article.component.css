@@ -1,15 +1,23 @@
-article{
-    width: auto;
+/* article{
+    width: 80vw;
     height: 1016px;
-}
+} */
 
 
 .lastTravelPicture, img {
     position: relative;
-    width: 1029px;
-    height: 686px;
+    width:80vw;
+    min-width: 350px; 
+    min-height: 350px; 
+    /* margin-top: 165px;  */
+    /* pour que l'image passe sous le header */
+    z-index: -1;
+}
+
+img{
     object-fit: cover;
 }
+
 
 .terracottaBand{
     position: absolute;
@@ -19,8 +27,30 @@ article{
     height: 118px;
     background-color: var(--lightTerracotta);
     z-index: 1;   
+    display: flex;
+}
+
+.countryPart{
+    width: 816px;
+    height: 118px;
+    border-right:1px solid var(--white);
+    padding: 40px 0 40px 49px;
+}
+
+.datePart{
+    width: 213px;
+    height: 118px;
+    padding: 50px 38px 49px 35px;
 }
 
 h2, h4{
     color: var(--white);
+}
+
+@media (max-width:1000px){
+
+    .lastTravelPicture, img{
+        width: 350px;
+        height: 350px;
+    }
 }

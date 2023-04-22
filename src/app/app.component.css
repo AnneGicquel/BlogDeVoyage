@@ -5,7 +5,7 @@
     display:flex;
     align-items: center;
     justify-content: center;
-    margin-left: 157px;
+    /* margin-left: 157px; */
 }
 
 main{
@@ -15,11 +15,17 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* margin-left: 157px;  */
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
 }
 
 
+/* A REPRENDRE */
+@media (max-width: 850px) {
+    .footer{
+        /* fonctionne pas */
+        height: 118px;
+    }
+
+    main{
+        padding-bottom: 118px;
+    }
+}

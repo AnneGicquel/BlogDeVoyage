@@ -1,15 +1,13 @@
-<article routerLink="/articles">
-    <ng-container *ngFor="let data of data">
+<article *ngFor="let data of data"[routerLink]="['/articles', data.id]"> 
         <div *ngIf="data.isOnHomePage" class="lastTravelPicture">
-            <img [routerLink]="['/articles', data.id]" src="{{data.mainPicture}}" alt="Image du voyage en {{data.country}}" >
+            <a ><img src="{{data.mainPicture}}" alt="Image du voyage en {{data.country}}" ></a>
             <div class="terracottaBand">
                 <div class="countryPart">
                     <h2>{{data.country}} - {{data.city}}</h2>
                 </div>
                 <div class="datePart">
-                    <h4>{{data.departureDate}} - {{data.returnDate}}</h4>
+                    <h4>{{data.departureDate}}·{{data.returnDate}}</h4>
                 </div>
             </div>
         </div>
-    </ng-container>
-</article>
+</article> 

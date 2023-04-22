@@ -1,0 +1,10 @@
+section {
+    margin-top: 165px;
+}
+
+@media (max-width:1200px){
+    section{
+        margin-top: 114px;
+    }
+    
+}
