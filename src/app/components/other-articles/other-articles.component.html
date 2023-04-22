@@ -1,12 +1,28 @@
-<!-- AJOUTER LA BANDE !!! -->
-<!-- VOIR LE GAP !!! -->
-
+<!-- AVEC TITRE -> SECTION -->
 <section class="sectionOtherArticles">
+
     <h1>Autres voyages</h1>
+
     <div class="allCountriesPictures">
-        <ng-container *ngFor="let data of data" >
-            <a *ngIf="!data.isOnHomePage" [routerLink]="['/articles', data.id]"><img class="size" src="{{data.mainPicture}}"
-                    alt="Autre pays: {{data.country}}" ></a>
+
+        <ng-container *ngFor="let data of data">
+            <div class="size">
+            <a *ngIf="!data.isOnHomePage" [routerLink]="['/articles', data.id]"><img class="size"
+                    src="{{data.mainPicture}}" alt="Autre pays: {{data.country}}"></a>
+            <div class="terracottaBand" *ngIf="!data.isOnHomePage">
+                <div class="countryPart">
+                    <h3>{{data.country}}</h3> 
+                    <h4>{{data.city}}</h4>
+                </div>
+                <div class="datePart">
+                    <h4>Du {{data.departureDate}} <br>au {{data.returnDate}}</h4>
+                </div> 
+            </div>
+        </div>
+
         </ng-container>
+
     </div>
+
 </section>
+
