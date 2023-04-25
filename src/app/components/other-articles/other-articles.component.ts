@@ -11,6 +11,7 @@ export class OtherArticlesComponent {
   data: IarticlesData[]= ARTICLESDATA;
 
 
+
   /*
   selectedCountry! : IarticlesData;
 

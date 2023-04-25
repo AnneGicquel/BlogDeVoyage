@@ -7,6 +7,10 @@
     width: 157px; /* largeur de la bande */
     height: 100vh; /* sur toute la hauteur */
     background-color: var(--sand); 
+    /* pour que .terracottaband et .size de la homePage
+    passe sous le header et conserve le routerLink
+    car avec z-index:-1, le routerLink ne fonctionne plus.*/
+    z-index: 30;
   }
   
   .headerText {
@@ -34,7 +38,7 @@
     padding-right: 42px;
   }
 
-  @media (max-width: 810px) {
+  @media (max-width: 1000px) {
     .headerBand {
       position: fixed;
       top: 0;
@@ -47,18 +51,25 @@
     }
     
     .headerText {
+      
+      padding-top: 25px;
+      padding-left: 19px;
       transform: none;
       white-space: normal;
-      height: auto;
+      height: 70px;
       display: inline-block;
+      width: 305px; 
+      /* width: 50vw; */
+      border-right: 1px solid black;
     }
   
-    .headerBlankPart{
-      height: auto;
+    /* .headerBlankPart{ */
+      /* width: 500px; ??? */
+      /* height: auto;
       border-top: none;
       border-bottom: none;
       display: none;
-    }
+    }  */
   
     .headerCityAndTemp{
       transform: none;

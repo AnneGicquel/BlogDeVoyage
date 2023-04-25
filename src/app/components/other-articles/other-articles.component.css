@@ -1,15 +1,20 @@
 .sectionOtherArticles{
     margin-top: 208px;
     height: 1255px;
-    
+    /* section de la taille du composant d'au-dessus 
+    + 10vw pour offrir un centre "centré" */
+    width:90vw;    
 }
 
 .size{
     position: relative;
     width: 38.5vw;
-    height: 68.5vh;
+    min-height: 512px;
+    max-height: 512px;
     min-width: 350px;
     object-fit: cover;
+    /* pour que l'image passe sous le header */
+    z-index:0;
 }
 
 .allCountriesPictures{
@@ -30,18 +35,24 @@
     right: 0;
     height: 118px;
     background-color: var(--terracotta);
-    z-index: 1;   
+    /* pour que l'image passe sous le header */
+    z-index: 10; 
+    
 }
 
 .countryPart{
     width: 342px;
     height: 118px;
     border-right:1px solid var(--white);
+    padding:29px 0 32px 34px; 
 }
 
 .datePart{
     width: 158px;
     height: 118px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 h1{
@@ -49,21 +60,58 @@ h1{
     
 }
 
+h3{
+    font-family: var(--lora);
+    font-size: clamp(12px, 4vw, 2px);
+    font-weight: 400;
+}
+
+
+h4{
+    font-family: var(--inter);
+    font-size: clamp(14px, 4vw, 6px);
+    font-weight: 400;
+}
+
+
 /* AJOUTER LA BANDE !!! */
 
-@media (max-width:1200px){
+@media (max-width:1000px){
     .size{
-
-    max-height: 358px;
+        min-height: 358px;
+        max-height: 358px;
     }
 
     .sectionOtherArticles{
         margin-top: 76px;
     }
+
+    .allCountriesPictures{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } 
+
+    .terracottaBand{
+        height: 70px;   
+    }
+
+    /* A REPRENDRE UNE FOIS LA TYPO FAITE */
+    /* .countryPart{
+        padding: 25px 16px 0 25px;
 }
+
+    .datePart{
+        padding: 29px 15px;
+} */
+
+}
+
+/* RESPONSIVE */
 
 @media (max-width:1000px){
     .allCountriesPictures{
         gap: 44px;
     }
 }
+

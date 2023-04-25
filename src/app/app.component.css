@@ -1,16 +1,11 @@
-.footer{
-    position: relative;
-    margin-top: auto;
-    height: 308px;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    /* margin-left: 157px; */
+.footer {
+    align-self: flex-end;
+
 }
 
 main{
     flex: 1;
-    padding-bottom: 308px;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,13 +14,11 @@ main{
 
 
 /* A REPRENDRE */
-@media (max-width: 850px) {
-    .footer{
-        /* fonctionne pas */
-        height: 118px;
-    }
-
+/* MANQUE LE FOOTER sur homePage !!! */
+@media (max-width: 1000px) {
     main{
-        padding-bottom: 118px;
+        min-height: 180vh;
     }
 }
+
+

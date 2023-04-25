@@ -1,15 +1,8 @@
-/* article{
-    width: 80vw;
-    height: 1016px;
-} */
-
-
 .lastTravelPicture, img {
     position: relative;
     width:80vw;
     min-width: 350px; 
     min-height: 350px; 
-    /* margin-top: 165px;  */
     /* pour que l'image passe sous le header */
     z-index: -1;
 }
@@ -43,9 +36,22 @@ img{
     padding: 50px 38px 49px 35px;
 }
 
-h2, h4{
+h2{
+    font-family: var(--lora);
+    font-size: clamp(15px, 4vw, 3px);
+    font-weight: 400;
     color: var(--white);
 }
+
+
+h4{
+    font-family: var(--inter);
+    font-size: clamp(14px, 4vw, 16px);
+    font-weight: 400;
+    color: var(--white);
+}
+
+/* RESPONSIVE */
 
 @media (max-width:1000px){
 
@@ -53,4 +59,26 @@ h2, h4{
         width: 350px;
         height: 350px;
     }
+
+    .terracottaBand{
+        height: 70px;   
+    }
+
+    .countryPart{
+        padding: 25px 16px 0 25px;
 }
+
+    .datePart{
+        padding: 29px 15px;
+}
+
+}
+
+/* responsive en edouceur mais désaccordé avec le bas... */
+/* @media (max-width:800px){
+
+    .lastTravelPicture, img{
+        width: 350px;
+        height: 350px;
+    }
+} */

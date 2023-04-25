@@ -4,5 +4,26 @@ img{
     object-fit: cover;
     margin: 15px;
     
-    /* gap ! */
+}
+
+h1{
+    /* margin-top: 115px; */
+    /* 44px - 15 de margin de l'img = 29 */
+    margin-bottom: 29px;
+}
+
+@media (max-width: 1000px) {
+    img{
+        min-width: 350px;
+        min-height: 350px;
+        margin: 19px;
+        margin-bottom: 0;
+    }
+    h1{
+        /* margin-top: 115px; */
+        /* 37px - 19 de margin de l'img = 18 */
+        margin-bottom: 18px;
+    }
+
+   
 }

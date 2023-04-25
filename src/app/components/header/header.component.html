@@ -1,6 +1,7 @@
 <header class="headerBand">
     <a routerLink="/"><h2 class="headerText">Carnet de voyage</h2></a>
     <p class="headerBlankPart"></p>
-    <h4 class="headerCityAndTemp">{{dataLocation}}<br>☀️{{dataTemp}}°C</h4>
+    <!-- L’entité HTML &nbsp; (« non breaking space ») va nous permettre d’ajouter une espace simple dit espace « insécable » ; -->
+    <h4 class="headerCityAndTemp">{{dataLocation}}<br>☀️&nbsp;{{dataTemp}}°C</h4>
 </header>
    
