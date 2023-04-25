@@ -1,2 +1,13 @@
-@media (max-width: 830px) {
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 308px;
+    width: 100%;
+}
+
+@media (max-width: 1000px) {
+    footer{
+        height: 118px;   
+    } 
 }

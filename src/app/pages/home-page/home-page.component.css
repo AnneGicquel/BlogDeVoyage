@@ -5,6 +5,9 @@ section {
 @media (max-width:1200px){
     section{
         margin-top: 114px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     
 }

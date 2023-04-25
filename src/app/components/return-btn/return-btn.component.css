@@ -12,3 +12,18 @@
 .whiteArrow {
     padding: 60px;
 }
+
+
+@media (max-width: 1000px) {
+    .returnButton {
+        width: 74px;
+        height: 74px;
+        top: 0;
+        margin-top: 70px;
+    }
+
+    .whiteArrow {
+        padding: 30px;
+    }
+
+}
