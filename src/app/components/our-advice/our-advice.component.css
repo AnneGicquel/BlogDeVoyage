@@ -1,33 +1,40 @@
-ul{
+ul {
     padding-left: 25px;
 }
 
-h1{
+.h1OurAdviceArticle {
+    font-size: clamp(28px, calc(6vw + 2px), 60px);
+    font-family: var(--lora);
+    font-weight: 400;
     margin-bottom: 44px;
 }
 
-h3{
+.h3OurAdviceArticle {
+    font-size: 24px;
+    font-family: var(--inter);
+    font-weight: 400;
     margin-top: 62px;
     margin-bottom: 33px;
 }
 
-.lePlus{
-    /* 62px du h1 - 44px du h3 = 18px */
-    margin-top: 18px;
+.lePlus {
+    /* entre h1 et h3'lePlus'-> 44px*/
+    margin-top: 0;
 }
 
-li{
+li {
     font-size: 20px;
-    /* ajouter font family */
+    font-family: var(--inter);
+    font-weight: 400;
 }
 
 
-@media (max-width: 1000px){
-    .ourAdviceArticle{
+@media (max-width: 1000px) {
+    .ourAdviceArticle {
         width: 350px;
     }
 
-    h1{
+    h1 {
         margin-bottom: 36px;
     }
 }

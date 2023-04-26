@@ -1,13 +1,14 @@
-h1 {
-    margin-top: 115px;
+.h1CoverArticle {
+    font-size: clamp(26px, calc(6vw + 2px), 60px);
+    font-weight: 400;
+    /* margin-top: 115px; */
 }
 
-
-h4 {
+.h4CoverArticle {
+    font-size: clamp(14px, calc(1.6vw + 6px), 16px);
+    font-weight: 400;
     margin-bottom: 44px;
 }
-
-
 
 .coverPicture {
     width: 80vw;
@@ -32,3 +33,28 @@ h4 {
     }
 
 }
+
+/* CLAMP */
+
+/*   trois valeurs en entrée:
+
+.pour le h4: clamp(14px, calc(1.6vw + 6px), 16px);
+
+- la première 26 pixels -> taille minimum du texte. 
+Si la taille de la fenêtre d'affichage est telle que 
+la taille calculée selon les autres valeurs est inférieure 
+à 26px, alors la taille du texte sera de 26px.
+-> CALCULER POUR - 500px
+
+- la deuxième valeur est une fonction de calcul ("calc()") 
+qui utilise la largeur de la fenêtre d'affichage ("vw") pour 
+déterminer la taille du texte. Dans ce cas-ci, la taille du texte 
+augmentera de 6 pixels pour chaque tranche de 100 pixels de largeur 
+de fenêtre d'affichage. La valeur de 2px est ajoutée pour assurer une 
+taille de texte minimale même pour les fenêtres d'affichage les plus petites.
+
+- la troisième 60px -> taille maximum du texte. 
+Si la taille de la fenêtre d'affichage est telle que la taille calculée 
+selon les autres valeurs est supérieure à 60px, 
+alors la taille du texte sera de 60px.
+-> CALCULER POUR + 900px */

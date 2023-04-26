@@ -1,84 +1,77 @@
-.lastTravelPicture, img {
+.lastTravelPicture,
+img {
     position: relative;
-    width:80vw;
-    min-width: 350px; 
-    min-height: 350px; 
+    width: 80vw;
+    min-width: 350px;
+    min-height: 350px;
     /* pour que l'image passe sous le header */
     z-index: -1;
 }
 
-img{
+img {
     object-fit: cover;
 }
 
 
-.terracottaBand{
+.terracottaBand {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     height: 118px;
     background-color: var(--lightTerracotta);
-    z-index: 1;   
+    z-index: 1;
     display: flex;
 }
 
-.countryPart{
+.countryPart {
     width: 816px;
     height: 118px;
-    border-right:1px solid var(--white);
+    border-right: 1px solid var(--white);
     padding: 40px 0 40px 49px;
 }
 
-.datePart{
+.datePart {
     width: 213px;
     height: 118px;
     padding: 50px 38px 49px 35px;
 }
 
-h2{
+.h2LastArticle {
     font-family: var(--lora);
-    font-size: clamp(15px, 4vw, 3px);
+    font-size: clamp(15px, 3vw, 30px);
     font-weight: 400;
     color: var(--white);
 }
 
 
-h4{
+.h4LastArticle {
     font-family: var(--inter);
-    font-size: clamp(14px, 4vw, 16px);
+    font-size: clamp(10px, 1.5vw, 15px);
     font-weight: 400;
     color: var(--white);
 }
 
 /* RESPONSIVE */
 
-@media (max-width:1000px){
+@media (max-width:1000px) {
 
-    .lastTravelPicture, img{
+    .lastTravelPicture,
+    img {
         width: 350px;
         height: 350px;
     }
 
-    .terracottaBand{
-        height: 70px;   
+    .terracottaBand {
+        height: 70px;
     }
 
-    .countryPart{
+    .countryPart {
         padding: 25px 16px 0 25px;
-}
-
-    .datePart{
-        padding: 29px 15px;
-}
-
-}
-
-/* responsive en edouceur mais désaccordé avec le bas... */
-/* @media (max-width:800px){
-
-    .lastTravelPicture, img{
-        width: 350px;
-        height: 350px;
     }
-} */
+
+    .datePart {
+        padding: 29px 15px;
+    }
+
+}
