@@ -6,16 +6,24 @@
     margin-bottom: 113px;
 }
 
+.h1TravelOrSummary{
+    font-size: clamp(28px, calc(4vw + 10px), 60px);
+    font-family: var(--lora);
+    font-weight: 400;
+    margin-top: 115px;
+    margin-bottom: 44px;
+}
+
 .textTravelorSummary{
+    font-family: var(--inter);
+    font-size: clamp(18px, calc(1.6vw + 6px), 20px);
+    font-weight: 400;
     color: var(--white);
     /* "pre-line" -> les retours à la ligne seront pris en compte grâce à \n dans le mock*/
     white-space:pre-line;
 }
 
-h1{
-    margin-top: 115px;
-    margin-bottom: 44px;
-}
+
 
 @media (max-width: 1000px) {
     .rectangleTerracotta{
@@ -24,7 +32,7 @@ h1{
         margin-bottom: 76px;
 }
 
-h1{
+.h1TravelOrSummary{
     margin-top: 76px;
     margin-bottom: 35px;
 }

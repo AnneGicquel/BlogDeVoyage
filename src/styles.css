@@ -51,9 +51,9 @@ button{
 
 /* TITRE et P PAR COMPO ET NON ICI */
 /* TYPO */
-h1{
+/* h1{
     font-family: var(--lora);
-    font-size: clamp(30px, 4vw, 60px);
+    font-size: clamp(26px, calc(6vw + 2px), 60px);
     font-weight: 400;
 }
 
@@ -83,7 +83,8 @@ p{
     font-size: clamp(10px, 4vw, 20px);
     font-weight: 400;
 }
- 
+  */
+  
 /* retirer margin -> centrer les elem. -> flex sur app.cpm.css*/
 @media (max-width: 1000px) {
     body{

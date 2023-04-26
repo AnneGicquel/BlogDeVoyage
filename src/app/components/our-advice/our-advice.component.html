@@ -1,24 +1,24 @@
 <article class="ourAdviceArticle">
 
-    <h1>Notre avis</h1>
+    <h1 class="h1OurAdviceArticle">Notre avis</h1>
 
 
-    <h3 class="lePlus">Les plus</h3>
+    <h3 class="h3OurAdviceArticle lePlus">Les plus</h3>
     <ul>
         <li *ngFor="let gPoint of goodPoints">{{gPoint}}</li>
     </ul>
 
 
-    <h3>Les moins</h3>
-    <ul >
+    <h3 class="h3OurAdviceArticle">Les moins</h3>
+    <ul>
         <li *ngFor="let bPoint of badPoints">{{bPoint}}</li>
     </ul>
 
 
-    <h3>Mon conseil</h3>
+    <h3 class="h3OurAdviceArticle">Mon conseil</h3>
     <ul>
         <li *ngFor="let adv of advices">{{adv}}</li>
-    </ul>  
+    </ul>
 
 
 </article>

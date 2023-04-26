@@ -1,4 +1,4 @@
-footer{
+footer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -6,8 +6,14 @@ footer{
     width: 100%;
 }
 
+.h3Footer{
+    font-family:var(--lora) ;
+    font-weight: 400;
+    font-size: 24px;
+}
+
 @media (max-width: 1000px) {
-    footer{
-        height: 118px;   
-    } 
+    footer {
+        height: 118px;
+    }
 }

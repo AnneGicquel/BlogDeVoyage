@@ -1,80 +1,88 @@
 /* HEADER BANDE */
 
 .headerBand {
-    position: fixed; /* fixe la div */
-    top: 0; /* en haut */
-    left: 0; /* à gauche  */
-    width: 157px; /* largeur de la bande */
-    height: 100vh; /* sur toute la hauteur */
-    background-color: var(--sand); 
-    /* pour que .terracottaband et .size de la homePage
+  position: fixed;
+  /* fixe la div */
+  top: 0;
+  /* en haut */
+  left: 0;
+  /* à gauche  */
+  width: 157px;
+  /* largeur de la bande */
+  height: 100vh;
+  /* sur toute la hauteur */
+  background-color: var(--sand);
+  /* pour que .terracottaband et .size de la homePage
     passe sous le header et conserve le routerLink
     car avec z-index:-1, le routerLink ne fonctionne plus.*/
-    z-index: 30;
+  z-index: 30;
+}
+
+.headerText {
+  font-family: var(--inter);
+  font-size: clamp(16px, calc(18px + (30 - 18) * ((100vw - 500px)/ (900 - 500))),30px);
+  font-weight: 400;
+  height: 350px;
+  transform: rotate(-90deg);
+  /* pivote ! */
+  white-space: nowrap;
+  /* texte sur une seule ligne !! */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerBlankPart {
+  height: 400px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+
+}
+
+.headerCityAndTemp {
+  font-family: var(--inter);
+  font-size: clamp(12px, calc(12px + (16 - 12) * ((100vw - 500px) / (900 - 500))), 16px);
+  font-weight: 400;
+  transform: rotate(-90deg);
+  /* pivote ! */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 25px;
+  padding-right: 42px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+  .headerBand {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 70px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  
+
   .headerText {
-    height: 350px;
-    transform: rotate(-90deg); /* pivote ! */
-    white-space: nowrap; /* texte sur une seule ligne !! */
-    display: flex;  
-    justify-content: center; 
-    align-items: center;
-  }               
-  
-  .headerBlankPart{
-    height: 400px;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
 
+    padding-top: 25px;
+    padding-left: 19px;
+    transform: none;
+    white-space: normal;
+    height: 70px;
+    display: inline-block;
+    width: 305px;
+    /* width: 50vw; */
+    border-right: 1px solid black;
   }
 
-  .headerCityAndTemp{
-    transform: rotate(-90deg); /* pivote ! */
-    display: flex;  
-    justify-content: center; 
-    align-items: center;
-    padding-bottom: 25px;
-    padding-right: 42px;
+  .headerCityAndTemp {
+    transform: none;
+    display: inline-block;
+    padding: 0 20px;
   }
-
-  @media (max-width: 1000px) {
-    .headerBand {
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: 70px;
-      width: 100vw;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    
-    .headerText {
-      
-      padding-top: 25px;
-      padding-left: 19px;
-      transform: none;
-      white-space: normal;
-      height: 70px;
-      display: inline-block;
-      width: 305px; 
-      /* width: 50vw; */
-      border-right: 1px solid black;
-    }
-  
-    /* .headerBlankPart{ */
-      /* width: 500px; ??? */
-      /* height: auto;
-      border-top: none;
-      border-bottom: none;
-      display: none;
-    }  */
-  
-    .headerCityAndTemp{
-      transform: none;
-      display: inline-block;
-      padding: 0 20px;
-    }
-  }
-  
+}
