@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { ARTICLESDATA, IarticlesData } from 'src/app/mocks/articlesData';
+import { IarticlesData, IsecondaryImages } from 'src/app/mocks/articlesData';
 
 @Component({
   selector: 'app-to-travel-alittle-more',
@@ -8,10 +8,7 @@ import { ARTICLESDATA, IarticlesData } from 'src/app/mocks/articlesData';
 })
 export class ToTravelALittleMoreComponent {
 
-  // data: IarticlesData[]= ARTICLESDATA;
+  travelArticle!: IarticlesData;
 
-  travelArticle!:IarticlesData;
-
-  @Input()secondaryImages!: IarticlesData[];
-
+  @Input() secondaryImages!: IsecondaryImages[];
 }

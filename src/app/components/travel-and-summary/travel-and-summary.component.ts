@@ -7,10 +7,10 @@ import { ARTICLESDATA, IarticlesData } from 'src/app/mocks/articlesData';
   styleUrls: ['./travel-and-summary.component.css']
 })
 export class TravelAndSummaryComponent {
- 
-  data: IarticlesData[]= ARTICLESDATA;
 
-  @Input() title!:string;
-  @Input() text!:string;
+  data: IarticlesData[] = ARTICLESDATA;
+
+  @Input() title!: string;
+  @Input() text!: string;
 
 }

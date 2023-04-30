@@ -1,6 +1,32 @@
-# BlogDeVoyage
+# BlogDeVoyage / TravelBlog
+
+Responsive travel blog with dynamic page and data + API requests to display temperature dynamically.
+
+Throughout the site, via the header, we follow the real time temperature of the latest travel's location. <br>
+The latest blog post is featured at the top of the homepage. Previous articles are accessible at the bottom..<br> 
+By clicking on the images, the user is redirected to the next page with trip's specs.<br>
+They are divided into following sections:
+* The trip 
+* Traveler's review: 
+    * Positives points  
+    * Negatives points  
+    * Advices 
+* Summary
+* Additional pictures for further inspiration
+
+ps: You will find the first five days of organization in a "Trello" folder  stored in assets. 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
+
+## Screenshots of the application
+
+Here's some screenshots of the application
+
+![screenshot of the application - top part](assets/screenshots/screenshot_1.png)
+![screenshot of the application - middle part](assets/screenshots/screenshot_2.png)
+![screenshot of the application - bottom part](assets/screenshots/screenshot_3.png)
+
+@AnneGicquel
 
 ## Development server
 
@@ -25,3 +51,5 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+

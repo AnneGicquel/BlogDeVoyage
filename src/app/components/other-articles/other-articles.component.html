@@ -1,28 +1,25 @@
-<!-- AVEC TITRE -> SECTION -->
 <section class="sectionOtherArticles">
-
-    <h1 class="h1OtherArticles">Autres voyages</h1>
-
-    <div class="allCountriesPictures">
-
-        <ng-container *ngFor="let data of data">
-            <div class="size">
-                <a *ngIf="!data.isOnHomePage" [routerLink]="['/articles', data.id]"><img class="size"
-                        src="{{data.mainPicture}}" alt="Autre pays: {{data.country}}"></a>
-                <div class="terracottaBand" *ngIf="!data.isOnHomePage">
-                    <div class="countryPart">
-                        <h3 class="h3OtherArticles">{{data.country}}</h3>
-                        <h4 class="h4CityOtherArticles">{{data.city}}</h4>
-                    </div>
-                    <div class="datePart">
-                        <!-- L’entité HTML &thinsp; (« thin space ») -> espace très fin (demi-espace). -->
-                        <h4 class="h4DateOtherArticles">Du {{data.departureDate}}<br>&thinsp;au {{data.returnDate}}</h4>
+    <div class="containerOtherArticles">
+        <h1 class="h1OtherArticles">Autres voyages</h1>
+        <div class="allCountriesPictures">
+            <ng-container *ngFor="let data of data">
+                <div *ngIf="!data.isOnHomePage" class="size">
+                    <a [routerLink]="['/articles', data.id]">
+                        <img class="size" src="{{data.mainPicture}}" alt="Autre pays: {{data.country}}">
+                    </a>
+                    <div class="terracottaBand">
+                        <div class="countryPart">
+                            <h3 class="h3OtherArticles">{{data.country}}</h3>
+                            <h4 class="h4CityOtherArticles">{{data.city}}</h4>
+                        </div>
+                        <div class="datePart">
+                            <!-- L’entité HTML &thinsp; (« thin space ») -> espace très fin (demi-espace). -->
+                            <h4 class="h4DateOtherArticles">Du {{data.departureDate}}<br>&thinsp;au {{data.returnDate}}
+                            </h4>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-        </ng-container>
-
+            </ng-container>
+        </div>
     </div>
-
 </section>

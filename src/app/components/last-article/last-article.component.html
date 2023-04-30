@@ -1,5 +1,6 @@
-<article *ngFor="let data of data" [routerLink]="['/articles', data.id]">
-    <div *ngIf="data.isOnHomePage" class="lastTravelPicture">
+<!-- .ts -> data?: IarticlesData = ARTICLESDATA.find(article=>article.isOnHomePage) -->
+<article class="articleLastArticle" *ngIf="data" [routerLink]="['/articles', data.id]">
+    <div class="lastTravelPicture">
         <a>
             <img src="{{data.mainPicture}}" alt="Image du voyage en {{data.country}}">
         </a>
