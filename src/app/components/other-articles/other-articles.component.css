@@ -1,12 +1,14 @@
-.sectionOtherArticles{
+.sectionOtherArticles {
+    display: flex;
+    justify-content: center;
     margin-top: 208px;
     height: 1255px;
     /* section de la taille du composant d'au-dessus 
     + 10vw pour offrir un centre "centré" */
-    width:90vw;    
+    width: 90vw;
 }
 
-.size{
+.size {
     position: relative;
     width: 38.5vw;
     min-height: 512px;
@@ -14,20 +16,19 @@
     min-width: 350px;
     object-fit: cover;
     /* pour que l'image passe sous le header */
-    z-index:0;
+    z-index: 0;
 }
 
-.allCountriesPictures{
+.allCountriesPictures {
     width: 80vw;
-    /* height: 1120px; */
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
     gap: 30px;
 }
 
-.terracottaBand{
+.terracottaBand {
     display: flex;
     position: absolute;
     bottom: 0;
@@ -36,93 +37,102 @@
     height: 118px;
     background-color: var(--terracotta);
     /* pour que l'image passe sous le header */
-    z-index: 10; 
-    
+    z-index: 10;
 }
 
-.countryPart{
+.countryPart {
     width: 342px;
     height: 118px;
-    border-right:1px solid var(--white);
-    padding:29px 0 32px 34px; 
+    border-right: 1px solid var(--white);
+    padding: 29px 0 32px 34px;
 }
 
-.datePart{
+.datePart {
     width: 158px;
     height: 118px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 36px 31px;
 }
 
-.h1OtherArticles{
+.h1OtherArticles {
     font-family: var(--lora);
     font-size: clamp(30px, calc(1.6vw + 10px), 60px);
     font-weight: 400;
     margin-bottom: 44px;
-    
+
 }
 
-.h3OtherArticles{
+.h3OtherArticles {
     font-family: var(--lora);
     font-size: clamp(20px, calc(10px + 2vw), 24px);
     font-weight: 400;
     color: var(--white);
 }
 
-
-.h4CityOtherArticles{
+.h4CityOtherArticles {
     font-family: var(--inter);
     font-size: clamp(14px, calc(3vw + 2px), 16px);
     font-weight: 400;
     color: var(--white);
 }
 
-.h4DateOtherArticles{
+.h4DateOtherArticles {
     font-family: var(--inter);
-    font-size: clamp(12px, calc(12px + (16 - 12) * ((100vw - 500px) / (900 - 500))), 16px);
+    font-size: clamp(12px, calc(12px + (16 - 12) * ((60vw - 500px) / (900 - 500))), 16px);
     font-weight: 400;
     color: var(--white);
 }
 
-/* AJOUTER LA BANDE !!! */
 
-@media (max-width:1000px){
-    .size{
+/* RESPONSIVE */
+
+@media (max-width:1150px) {
+    .h4DateOtherArticles {
+        font-size: clamp(12px, calc(12px + (16 - 12) * ((30vw - 500px) / (900 - 500))), 16px);
+    }
+
+}
+
+@media (max-width:1000px) {
+    .size {
         min-height: 358px;
         max-height: 358px;
     }
 
-    .sectionOtherArticles{
+    .sectionOtherArticles {
         margin-top: 76px;
     }
 
-    .allCountriesPictures{
+    .allCountriesPictures {
         display: flex;
         flex-direction: column;
         align-items: center;
-    } 
-
-    .terracottaBand{
-        height: 70px;   
     }
 
-    /* A REPRENDRE UNE FOIS LA TYPO FAITE */
-    /* .countryPart{
-        padding: 25px 16px 0 25px;
-}
+    .terracottaBand {
+        height: 70px;
+    }
 
-    .datePart{
-        padding: 29px 15px;
-} */
+    .countryPart {
+        height: 70px;
+        padding: 15px 16px 22px 24px;
+    }
 
-}
+    .datePart {
+        height: 70px;
+        flex: none;
+        width: 119px;
+        padding: 25px 16px 23px 22px;
+    }
 
-/* RESPONSIVE */
-
-@media (max-width:1000px){
-    .allCountriesPictures{
+    .allCountriesPictures {
         gap: 44px;
     }
 }
 
+
+@media (max-width:390px) {
+
+    .sectionOtherArticles {
+        justify-content: unset;
+    }
+}

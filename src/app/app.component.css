@@ -3,9 +3,9 @@
 
 }
 
-main{
+main {
     flex: 1;
-    min-height: 100vh;
+    min-height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -13,12 +13,10 @@ main{
 }
 
 
-/* A REPRENDRE */
-/* MANQUE LE FOOTER sur homePage !!! */
+/* RESPONSIVE */
+
 @media (max-width: 1000px) {
-    main{
+    main {
         min-height: 180vh;
     }
 }
-
-

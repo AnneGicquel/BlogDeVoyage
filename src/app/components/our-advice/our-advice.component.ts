@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { ARTICLESDATA, IarticlesData } from 'src/app/mocks/articlesData';
+import { IarticlesData } from 'src/app/mocks/articlesData';
 
 @Component({
   selector: 'app-our-advice',
@@ -8,12 +8,10 @@ import { ARTICLESDATA, IarticlesData } from 'src/app/mocks/articlesData';
 })
 export class OurAdviceComponent {
 
-  // data: IarticlesData[]= ARTICLESDATA;
+  @Input() goodPoints!: string[];
+  @Input() badPoints!: string[];
+  @Input() advices!: string[];
 
-  @Input() goodPoints!:string[];
-  @Input() badPoints!:string[];
-  @Input() advices!:string[];
-
-  ourAdvices!:IarticlesData[];
+  ourAdvices!: IarticlesData[];
 
 }

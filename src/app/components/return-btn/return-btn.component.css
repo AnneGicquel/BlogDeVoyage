@@ -14,6 +14,8 @@
 }
 
 
+/* RESPONSIVE */
+
 @media (max-width: 1000px) {
     .returnButton {
         width: 74px;
@@ -25,5 +27,4 @@
     .whiteArrow {
         padding: 30px;
     }
-
 }

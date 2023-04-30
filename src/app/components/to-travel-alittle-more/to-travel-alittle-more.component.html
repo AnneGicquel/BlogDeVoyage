@@ -1,6 +1,7 @@
 <section class="sectionToTravelAlittleBitMore">
     <h1 class="h1ToTravelALittleBitMore">Pour voyager un peu plus</h1>
     <div class="divToTravel">
-        <img class="imgToTravelAlittleBitMore" *ngFor="let image of secondaryImages" src="{{image}}">
+        <img class="imgToTravelAlittleBitMore" *ngFor="let image of secondaryImages" src="{{image.img}}"
+            alt="{{image.alt}}">
     </div>
 </section>

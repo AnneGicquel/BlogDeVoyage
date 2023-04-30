@@ -9,11 +9,11 @@ import { ARTICLESDATA, IarticlesData } from 'src/app/mocks/articlesData';
 })
 export class ArticlesComponent {
 
-  data: IarticlesData[]= ARTICLESDATA;
+  data: IarticlesData[] = ARTICLESDATA;
   travelArticle: any;
 
- 
-  ngOnInit(){
+
+  ngOnInit() {
     this.getTravelId()
   }
 
@@ -22,29 +22,25 @@ export class ArticlesComponent {
   { path: 'articles/:id', component: ArticlesComponent }
   et dans le html:[routerLink]="['/articles', data.id]"*/
 
-  constructor(public activatedRoute:ActivatedRoute) { }
+  constructor(public activatedRoute: ActivatedRoute) { }
 
-  getTravelId(){
+  getTravelId() {
 
     // récupérer l'id avec un type number
     const id = Number(this.activatedRoute.snapshot.paramMap.get('id'));
     // verif
     console.log('ID:', id);
-    
+
     // correspondance entre id reçu et le mock pour ouverture de l'article associé
-    const travelArticle = this.data.find((travel:IarticlesData)=>travel.id === id)
+    const travelArticle = this.data.find((travel: IarticlesData) => travel.id === id)
     // verif
-    console.log('article à sortir', travelArticle)
+    console.log('article à sortir:', travelArticle)
 
-    this.travelArticle = travelArticle 
-    
+    this.travelArticle = travelArticle
+
   }
-
-  
-  
-  
 }
 
-  
-  
+
+
 

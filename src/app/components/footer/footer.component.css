@@ -6,11 +6,14 @@ footer {
     width: 100%;
 }
 
-.h3Footer{
-    font-family:var(--lora) ;
+.h3Footer {
+    font-family: var(--lora);
     font-weight: 400;
     font-size: 24px;
 }
+
+
+/* RESPONSIVE */
 
 @media (max-width: 1000px) {
     footer {

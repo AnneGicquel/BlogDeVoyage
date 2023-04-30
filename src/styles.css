@@ -19,7 +19,7 @@
     --white: #FFFFFF;
     --lightTerracotta: rgba(201, 107, 65, 0.7);
     /* font */
-    --lora: 'Lora', serif; 
+    --lora: 'Lora', serif;
     --inter: 'Inter', sans-serif;
 }
 
@@ -30,65 +30,30 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* list-style:none; */
 }
 
 
 /* marge pour centrer les pages après le header */
-body{
+body {
     margin-left: 157px;
 }
 
-a{ 
+a {
     color: var(--black);
-    text-decoration:none; 
+    text-decoration: none;
 }
 
 /* retire la bordure */
-button{
-    all:unset;
-}
-
-/* TITRE et P PAR COMPO ET NON ICI */
-/* TYPO */
-/* h1{
-    font-family: var(--lora);
-    font-size: clamp(26px, calc(6vw + 2px), 60px);
-    font-weight: 400;
-}
-
-h2{
-    font-family: var(--lora);
-    font-size: clamp(15px, 4vw, 30px);
-    font-weight: 400;
+button {
+    all: unset;
 }
 
 
-h3{
-    font-family: var(--lora);
-    font-size: clamp(12px, 4vw, 24px);
-    font-weight: 400;
-}
+/* RESPONSIVE */
 
-
-h4{
-    font-family: var(--inter);
-    font-size: clamp(14px, 4vw, 16px);
-    font-weight: 400;
-}
-
-
-p{
-    font-family: var(--inter);
-    font-size: clamp(10px, 4vw, 20px);
-    font-weight: 400;
-}
-  */
-  
 /* retirer margin -> centrer les elem. -> flex sur app.cpm.css*/
 @media (max-width: 1000px) {
-    body{
+    body {
         margin-left: 0;
     }
-} 
-
+}

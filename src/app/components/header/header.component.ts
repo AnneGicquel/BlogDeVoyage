@@ -22,10 +22,8 @@ export class HeaderComponent {
       this.dataTemp! = next.days[0].temp;
       this.dataLocation! = next.address;
       // affecte next à city
-      console.log('alors....?')
+      // verif
+      console.log('est-ve que cela fonctionne..?')
     })
   }
-
-  // @Input() temp!: ILocationResponse;
-
 }

@@ -1,7 +1,17 @@
+.articleLastArticle{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    /* pour que le margin-top s'adapte selon la taille de l'écran
+    vh = (165(margin-top en px) / 2607 (height en px de la page du moke-up) x 100 = 6.32599655 */
+    margin-top: 6.32vh;
+}
+
 .lastTravelPicture,
 img {
     position: relative;
     width: 80vw;
+    /* margin: auto; */
     min-width: 350px;
     min-height: 350px;
     /* pour que l'image passe sous le header */
@@ -11,7 +21,6 @@ img {
 img {
     object-fit: cover;
 }
-
 
 .terracottaBand {
     position: absolute;
@@ -39,11 +48,10 @@ img {
 
 .h2LastArticle {
     font-family: var(--lora);
-    font-size: clamp(15px, 3vw, 30px);
+    font-size: clamp(15px, 2vw, 30px);
     font-weight: 400;
     color: var(--white);
 }
-
 
 .h4LastArticle {
     font-family: var(--inter);
@@ -52,14 +60,19 @@ img {
     color: var(--white);
 }
 
+
 /* RESPONSIVE */
 
 @media (max-width:1000px) {
 
+    .articleLastArticle{
+        margin-top: 0;
+    }
+
     .lastTravelPicture,
     img {
         width: 350px;
-        height: 350px;
+        height: 358px;
     }
 
     .terracottaBand {
@@ -73,5 +86,5 @@ img {
     .datePart {
         padding: 29px 15px;
     }
-
 }
+

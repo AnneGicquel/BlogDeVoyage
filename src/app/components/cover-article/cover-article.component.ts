@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { ARTICLESDATA, IarticlesData } from 'src/app/mocks/articlesData';
+import { IarticlesData } from 'src/app/mocks/articlesData';
 
 @Component({
   selector: 'app-cover-article',
@@ -7,8 +7,8 @@ import { ARTICLESDATA, IarticlesData } from 'src/app/mocks/articlesData';
   styleUrls: ['./cover-article.component.css']
 })
 export class CoverArticleComponent {
- 
-//  infos entre Parent (page Article) et enfant (composant)
- @Input()travelArticle!:IarticlesData
+
+  //  infos entre Parent (page Article) et enfant (composant)
+  @Input() travelArticle!: IarticlesData
 
 }
