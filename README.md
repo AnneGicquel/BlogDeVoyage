@@ -22,9 +22,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Here's some screenshots of the application
 
-![screenshot of the application - top part](assets/screenshots/screenshot_1.png)
-![screenshot of the application - middle part](assets/screenshots/screenshot_2.png)
-![screenshot of the application - bottom part](assets/screenshots/screenshot_3.png)
+![screenshot of the application - top part](/assets/screenshots/screenshot_1.png)
+![screenshot of the application - middle part](/assets/screenshots/screenshot_2.png)
+![screenshot of the application - bottom part](/assets/screenshots/screenshot_3.png)
 
 @AnneGicquel
 
