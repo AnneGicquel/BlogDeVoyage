@@ -20,9 +20,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Screenshots of the application
 
-![screenshot of the application - top part](https://github.com/AnneGicquel/BlogDeVoyage/blob/dev/src/assets/screenshots/screenshot_1_Petite.jpeg?raw=true)
-![screenshot of the application - middle part](https://github.com/AnneGicquel/BlogDeVoyage/blob/dev/src/assets/screenshots/screenshot_2_Petite.jpeg?raw=true)
-![screenshot of the application - bottom part](https://github.com/AnneGicquel/BlogDeVoyage/blob/dev/src/assets/screenshots/screenshot_3_Petite.jpeg?raw=true)
+![screenshot of the application - top part](https://github.com/AnneGicquel/BlogDeVoyage/blob/dev/src/assets/screenshots/screenshot_1.jpeg?raw=true)
+![screenshot of the application - middle part](https://github.com/AnneGicquel/BlogDeVoyage/blob/dev/src/assets/screenshots/screenshot_2.jpeg?raw=true)
+![screenshot of the application - bottom part](https://github.com/AnneGicquel/BlogDeVoyage/blob/dev/src/assets/screenshots/screenshot_3.jpeg?raw=true)
 
 [@AnneGicquel](https://www.github.com/AnneGicquel)
 
